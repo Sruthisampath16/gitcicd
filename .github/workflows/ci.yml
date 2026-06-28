@@ -16,11 +16,11 @@ jobs:
           echo "${{secrets.DOCKER_PASSWORD}}"| \
           docker login -u "sruthidoc07" --password-stdin
 
-       -name: Docker build image
+       - name: Docker build image
         run: |
          docker build -t sruthidoc07/web:v1 .
 
-       -name: push docker image
+       - name: push docker image
         run:  |
          docker push sruthidoc07/web:v1
 
