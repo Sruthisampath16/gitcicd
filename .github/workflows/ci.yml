@@ -18,9 +18,9 @@ jobs:
 
        - name: Docker build image
          run: |
-         docker build -t sruthidoc07/web:v1 .
+           docker build -t sruthidoc07/web:v1 .
 
        - name: push docker image
          run:  |
-         docker push sruthidoc07/web:v1
+           docker push sruthidoc07/web:v1
 
